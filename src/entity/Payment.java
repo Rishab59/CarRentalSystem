@@ -1,17 +1,18 @@
 package entity;
 
-import java.sql.Timestamp;
+import java.sql.Date;
+
 
 public class Payment {
     private int paymentID;
     private int leaseID;
-    private Timestamp paymentDate;
+    private Date paymentDate;
     private double amount;
 
     public Payment() {
     }
 
-    public Payment(int paymentID, int leaseID, Timestamp paymentDate, double amount) {
+    public Payment(int paymentID, int leaseID, Date paymentDate, double amount) {
         this.paymentID = paymentID;
         this.leaseID = leaseID;
         this.paymentDate = paymentDate;
@@ -34,11 +35,11 @@ public class Payment {
         this.leaseID = leaseID;
     }
 
-    public Timestamp getPaymentDate() {
+    public Date getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(Timestamp paymentDate) {
+    public void setPaymentDate(Date paymentDate) {
         this.paymentDate = paymentDate;
     }
 
@@ -56,7 +57,7 @@ public class Payment {
 		       "Payment ID = " + getPaymentID() +
 		       ", Lease ID = " + getLeaseID() +
 		       ", Amount = " + getAmount() +
-		       ", Date = '" + getPaymentDate() + '\'' +
+		       ", Payment Date = '" + getPaymentDate() + '\'' +
 		       " }";
     }
     

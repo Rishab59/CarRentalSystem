@@ -1,5 +1,6 @@
 package entity;
 
+
 public class Lease {
     private int leaseID;
     private int vehicleID;

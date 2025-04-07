@@ -1,5 +1,6 @@
 package entity;
 
+
 public class Vehicle {
 	private int vehicleID;
 	private String make;
@@ -89,9 +90,7 @@ public class Vehicle {
 	}
 	
 	@Override
-	public String toString() {
-//	    return "Vehicle ID: " + vehicleID + "\nMake: " + make + "\nModel: " + model + "\nYear: " + year + "\nDaily Rate: Rs." + dailyRate + "\nPassenger Capacity: " + passengerCapacity + "\nEngine Capacity: " + engineCapacity + "L" + "\nStatus: " + status;
-		
+	public String toString() {		
 		return "Vehicle { " +
 		        "Vehicle ID = " + getVehicleID() +
 		        ", Make = '" + getMake() + '\'' +
