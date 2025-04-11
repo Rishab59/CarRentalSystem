@@ -9,24 +9,25 @@ J514 - Rishab H</i>
 CarRentalSystem/
 └── src/
 &nbsp;&nbsp;&nbsp;&nbsp;├── dao/
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── ICarLeaseRepository.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  └── CarLeaseRepositoryImpl.java 
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── ICarLeaseRepository.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   └── CarLeaseRepositoryImpl.java 
 &nbsp;&nbsp;&nbsp;&nbsp;├── entity/
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── Customer.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── Lease.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── Payment.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  └── Vehicle.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── Customer.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── Lease.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── Payment.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   └── Vehicle.java
 &nbsp;&nbsp;&nbsp;&nbsp;├── exception/
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── CarNotFoundException.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── CustomerNotFoundException.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  └── LeaseNotFoundException.java 
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── CarNotFoundException.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── CustomerNotFoundException.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   └── LeaseNotFoundException.java 
 &nbsp;&nbsp;&nbsp;&nbsp;├── main/
-&nbsp;&nbsp;&nbsp;&nbsp;│  ├── CRSMain.java
-&nbsp;&nbsp;&nbsp;&nbsp;│  └── CarRentalSer.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   ├── CRSMain.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   └── CarRentalSer.java
 &nbsp;&nbsp;&nbsp;&nbsp;├── test/
-&nbsp;&nbsp;&nbsp;&nbsp;│  └── TestDBConnection.java
+&nbsp;&nbsp;&nbsp;&nbsp;|   ├── CarRentalSystemTest.java
+&nbsp;&nbsp;&nbsp;&nbsp;│   └── TestDBConnection.java
 &nbsp;&nbsp;&nbsp;&nbsp;└── util/
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── DBConnUtil.java
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── DBConnUtil.java
 
 Other repository contents:
 <ul>
@@ -84,6 +85,34 @@ Utility class to establish a connection with the MySQL database.
 ## 🔗 Referenced Library
 
 - [MySQLConnector-9.2.0](https://dev.mysql.com/downloads/connector/j/?os=26) – Used for connecting the application to MySQL database.
+
+---
+
+### 🧪 JUnit  
+Used for unit testing core functionalities like adding/removing cars and customers, lease creation, payment recording, and listing records.
+
+### ✅ Tests 
+- testAddCar()
+- testRemoveCar()
+- testAddCustomer()
+- testRemoveCustomer()
+- testCreateAndEndLease()
+- testRecordPayment()
+- testGetTotalRevenue()
+- testListCustomers()
+- testListAvailableCars()
+- testListRentedCars()
+- testListLeases()
+- testListActiveLeases()
+- testListLeaseHistory()
+- testGetPaymentHistoryOfCustomer()
+
+✅ **14 / 14 TestCases Passed**
+
+### JUnit Test Case 1 to 8
+![JUnit Test Case 1 to 8](SampleOutputs/JUnit-Test-Case-1-to-8.png)  
+### JUnit Test Case 9 to 14
+![JUnit Test Case 9 to 14](SampleOutputs/JUnit-Test-Case-9-to-14.png)
 
 ---
 
