@@ -11,11 +11,15 @@ import util.DBConnUtil;
 
 
 public class CarLeaseRepositoryImpl implements ICarLeaseRepository {
-	private final Connection connection;
-
-    public CarLeaseRepositoryImpl() {
+	private Connection connection;
+	
+	public CarLeaseRepositoryImpl() {
         this.connection = DBConnUtil.getConnection();
     }
+	
+	public CarLeaseRepositoryImpl(Connection conn) { // For JUnit
+	    this.connection = conn;
+	}
 
     // Vehicle
     @Override
